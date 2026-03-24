@@ -16,13 +16,13 @@
       "inlineSources": false,
       "isolatedModules": false,
       //"jsx": "react",
-      "lib": ["dom", "es5", "es2015.core", "es2015.promise", "es2015.iterable", "es2015.symbol"],
+      "lib": ["dom", "ES2020"],
       "types" : [],
       "listFiles": true,
       "locale": "en-us",
       //"mapRoot": null,
-      "module": "commonjs",
-      //"moduleResolution": "classic",
+      "module": "ES2020",
+      "moduleResolution": "node",
       "newLine": "LF",
       "noEmit": false,
       "noEmitHelpers": false,
@@ -48,7 +48,7 @@
       "stripInternal": false,
       "suppressExcessPropertyErrors": true,
       "suppressImplicitAnyIndexErrors": true,
-      "target": "es5"
+      "target": "ES2020"
       //"traceResolution": false
   },
   "formatCodeOptions": {

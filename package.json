@@ -2,17 +2,24 @@
   "name": "webm-duration-fix",
   "version": "1.0.4",
   "description": "based on ts-ebml and support large file(than 2GB) and optimize memory usage during repair",
+  "type": "module",
   "scripts": {
     "init": "npm run update; npm run mkdir; npm run build",
     "update": "npm run reset; npm update",
     "reset": "rm -rf node_modules",
-    "mkdir": "mkdir lib dist 2>/dev/null",
-    "clean": "rm -rf lib/* dist/* test/*.js; mkdir -p dist",
-    "build": "npm run clean   && tsc    -p .; npm run browserify",
-    "browserify": "browserify lib/index.js --standalone EBML -o dist/EBML.js",
+    "mkdir": "mkdir lib 2>/dev/null",
+    "clean": "rm -rf lib/* test/*.js",
+    "build": "npm run clean && tsc -p .",
     "lint": "tslint -c ./tslint.json --project ./tsconfig.json --type-check"
   },
   "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/buynao/webm-duration-fix.git"
