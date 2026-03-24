@@ -1,7 +1,7 @@
-import * as EBML from "./EBML";
-import * as tools from "./tools";
-import {Buffer} from "./tools";
-import { byEbmlID } from "./ebmlID";
+import * as EBML from "./EBML.js";
+import * as tools from "./tools.js";
+import {Buffer} from "./tools.js";
+import { byEbmlID } from "./ebmlID.js";
 
 
 

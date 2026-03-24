@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import { EventEmitter } from "events";
-import * as EBML from './EBML';
+import * as EBML from './EBML.js';
 /**
  * This is an informal code for reference.
  * EBMLReader is a class for getting information to enable seeking Webm recorded by MediaRecorder.

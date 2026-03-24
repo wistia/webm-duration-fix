@@ -1,6 +1,6 @@
-export * from "./EBML";
-import Decoder from "./EBMLDecoder";
-import Encoder from "./EBMLEncoder";
-import Reader from "./EBMLReader";
-import * as tools from "./tools";
+export * from "./EBML.js";
+import Decoder from "./EBMLDecoder.js";
+import Encoder from "./EBMLEncoder.js";
+import Reader from "./EBMLReader.js";
+import * as tools from "./tools.js";
 export { Decoder, Encoder, Reader, tools };

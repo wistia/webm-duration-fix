@@ -1,9 +1,9 @@
 
 import {Int64BE} from "int64-buffer";
-import {Buffer, readVint, convertEBMLDateToJSDate} from "./tools";
-import * as EBML from "./EBML";
-import * as tools from "./tools";
-import { byEbmlID } from "./ebmlID";
+import {Buffer, readVint, convertEBMLDateToJSDate} from "./tools.js";
+import * as EBML from "./EBML.js";
+import * as tools from "./tools.js";
+import { byEbmlID } from "./ebmlID.js";
 
 enum State {
   STATE_TAG = 1,

@@ -1,4 +1,4 @@
-import * as EBML from "./EBML";
+import * as EBML from "./EBML.js";
 export default class EBMLEncoder {
     private _buffers;
     private _stack;

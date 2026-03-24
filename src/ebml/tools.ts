@@ -1,9 +1,9 @@
 /// <reference types="node"/>
 import {Int64BE, Uint64BE} from "int64-buffer";
-import * as EBML from "./EBML";
-import Encoder from "./EBMLEncoder";
+import * as EBML from "./EBML.js";
+import Encoder from "./EBMLEncoder.js";
 import * as _Buffer from "buffer";
-import _tools from "./tools-ebml";
+import _tools from "./tools-ebml.js";
 import * as _block from "ebml-block";
 
 export const Buffer: typeof global.Buffer = _Buffer.Buffer;

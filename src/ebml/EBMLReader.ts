@@ -1,6 +1,6 @@
 import {EventEmitter} from "events";
-import * as EBML from './EBML';
-import * as tools from './tools';
+import * as EBML from './EBML.js';
+import * as tools from './tools.js';
 
 /**
  * This is an informal code for reference.

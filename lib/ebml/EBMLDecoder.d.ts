@@ -1,4 +1,4 @@
-import * as EBML from "./EBML";
+import * as EBML from "./EBML.js";
 export default class EBMLDecoder {
     private _buffer;
     private _tag_stack;
